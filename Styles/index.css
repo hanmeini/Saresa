@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Assets/bg-home.png');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+    z-index: 10;
+    border: 3px solid;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin: auto;
+    width: 90%;
+    max-width: 1800px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.daftar-btn {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px 5px;
+}
+
+.daftar-btn span {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.circle-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #b4ff00;
+    border-radius: 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 150px);
+    padding: 0 20px;
+}
+
+.logo-center {
+    margin-bottom: 30px;
+}
+
+.logo-center img {
+    height: 60px;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.semesta {
+    color: #b4ff00;
+}
+
+.subheading {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(127, 126, 126, 0.065);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 5px 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cta-button span {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.arrow-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #b4ff00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
